@@ -1,0 +1,15 @@
+
+
+int numJewelsInStones(char * J, char * S){
+    
+    int i,k,jj,count;
+    
+    count=0;
+    for(i=0;i<strlen(J);i++){
+        jj=J[i];
+        for(k=0;k<strlen(S);k++){
+            if (jj==S[k]) count++;
+        }
+    }
+    return count;
+}
