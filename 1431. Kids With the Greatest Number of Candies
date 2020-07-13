@@ -1,0 +1,22 @@
+
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+bool* kidsWithCandies(int* candies, int candiesSize, int extraCandies, int* returnSize){
+    int max=0;
+    int i,j;
+    //bool* returnSize=malloc(sizeof(bool) * candiesSize);
+    *returnSize = candiesSize; //*表示拿出該指標位置的value
+    bool *result =  malloc(sizeof(bool) * candiesSize); //題目求的是回傳bool值
+    for(i=0;i<candiesSize;i++){
+        if (candies[i]>max) max=candies[i];
+    }
+    for(j=0;j<candiesSize;j++){
+        if((candies[j]+extraCandies)>=max) result[j]=true; 
+        else result[j]=false;
+        //true,false不用加雙引號,不然會變成字串
+    }
+    
+    return result;
+    
+}
