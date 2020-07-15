@@ -1,4 +1,21 @@
+#py
+class Solution(object):
+    def kidsWithCandies(self, candies, extraCandies):
+        """
+        :type candies: List[int]
+        :type extraCandies: int
+        :rtype: List[bool]
+        """
+        big = max(candies)
+        res = [[0]*1 for _ in range(len(candies))]
+        for i in range(len(candies)):
+            if(candies[i] + extraCandies) < big:
+                res[i] = False  #capital
+            else:
+                res[i] = True
+        return res
 
+//c 
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
