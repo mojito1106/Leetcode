@@ -1,3 +1,4 @@
+//py
 class Solution(object):
     def runningSum(self, nums):
         """
@@ -18,3 +19,16 @@ class Solution(object):
         return sum_list
         '''
 
+//c++
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {
+        vector<int> wade(nums.size());
+        wade[0] = nums[0];
+        for(int i=1; i < nums.size(); i++) {
+            wade[i] = nums[i];
+            wade[i] += wade[i-1];
+        }
+        return wade;
+    }
+};
