@@ -1,4 +1,16 @@
+#py
+class Solution(object):
+    def defangIPaddr(self, address):
+        """
+        :type address: str
+        :rtype: str
+        """
+        address.replace(".","[.]")
+        return address.replace(".","[.]")
+        
 
+
+//c
 char * defangIPaddr(char * address){
     
    
