@@ -5,9 +5,7 @@ class Solution(object):
         :type address: str
         :rtype: str
         """
-        address.replace(".","[.]")
         return address.replace(".","[.]")
-        
 
 
 //c
