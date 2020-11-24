@@ -1,0 +1,18 @@
+class Solution(object):
+    def restoreString(self, s, indices):
+        """
+        :type s: str
+        :type indices: List[int]
+        :rtype: str
+        """
+        #print (indices)
+        #print (s)
+        self.s = s
+        self.t = s
+        new_s = ''
+        
+        for i in range(len(indices)):
+            for j in range(len(indices)):
+                if i == indices[j]:
+                    new_s += self.s[j]
+        return new_s
