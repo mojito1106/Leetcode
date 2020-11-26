@@ -15,7 +15,7 @@ class Solution:
             value += new_dict_list[i][1]
         return value
 
-
+"""
 #python
 class Solution(object):
     def restoreString(self, s, indices):
@@ -34,4 +34,4 @@ class Solution(object):
             for j in range(len(indices)):
                 if i == indices[j]:
                     new_s += self.s[j]
-        return new_s
+        return new_s"""
