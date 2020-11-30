@@ -19,3 +19,19 @@ class Solution:
         if (flag == 0) and (max_c == 0):
             return 0
         else: return max_c
+
+        
+#version 2     
+"""class Solution:
+    def maxDepth(self, s: str) -> int:
+        max_val = 0
+        open_bracket = 0
+        for c in s:
+            if c == '(':
+                open_bracket += 1
+            
+            if c == ')':
+                max_val = max(open_bracket, max_val)
+                open_bracket -= 1
+                
+        return max_val"""
